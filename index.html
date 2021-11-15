@@ -1,0 +1,2851 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+
+    <title>Licence Pro Module eCommerce ECUE41</title>
+
+    <meta name="description" content="Licence Pro Module eCommerce ECUE41" />
+    <meta name="author" content="Sébastien HOUZÉ" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/beige.css" id="theme" />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h2>Module e-commerce</h2>
+          <p>
+            <small>ECUE41 - année 2021</small>
+          </p>
+          <img
+            data-src="images/iut-aix-marseille-logo.png"
+            alt="IUT Aix-Marseille logo"
+            height="130"
+          />
+          <aside class="notes">
+            Bonjour à tous et à toutes, bienvenus au module e-commerce, nous
+            sommes ensemble pour 24h.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Qui suis-je ?</h2>
+          <p>Sébastien HOUZÉ</p>
+          <div style="display: flex; gap: 24px; justify-content: center">
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://twitter.com/sebastienhouze"
+            >
+              <img
+                height="60"
+                data-src="./images/twitter-logo.png"
+                alt="Logo Twitter"
+              />
+            </a>
+            <a target="_blank" rel="noopener" href="https://twitter.com/shouze">
+              <img
+                height="60"
+                data-src="./images/github-logo.png"
+                alt="Logo Github"
+              />
+            </a>
+            <a
+              target="_blank"
+              rel="noopener"
+              href="https://www.linkedin.com/in/sebastien-houze/"
+            >
+              <img
+                height="60"
+                data-src="./images/linkedin-logo.png"
+                alt="Logo LinkedIn"
+              />
+            </a>
+          </div>
+          <div class="fragment fade-up">
+            <p>20 ans d'XP dont plus de 15 dans le e-commerce</p>
+            <div style="display: flex; gap: 24px; justify-content: center">
+              <img
+                height="60"
+                data-src="./images/rdc-logo.png"
+                alt="Logo Rue du commerce"
+              />
+              <img
+                height="60"
+                data-src="./images/vlr-logo.png"
+                alt="Logo VeryLastRoom"
+              />
+              <img
+                height="60"
+                data-src="./images/onatera-logo.png"
+                alt="Logo Onatera"
+              />
+              <img
+                height="60"
+                data-src="./images/gogaille-logo.png"
+                alt="Logo Gogaille"
+              />
+            </div>
+          </div>
+          <aside class="notes">
+            J'ai notamment occupé les fonctions de Développeur, Chef de projet,
+            Responsable qualité logicielle, Architecte, CTO. Digression parcours
+            e-commerce.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Qui êtes-vous ?</h2>
+          <p>
+            Rendez-vous sur <a href="https://menti.com">menti.com</a>
+            <br />
+            tapez le code <mark>9171&nbsp;5116</mark>
+          </p>
+          <div class="fragment">
+            <small>⏳ 10 min extra chit-chat</small>
+          </div>
+          <aside class="notes">
+            Je vous ai promis quelque chose d'interactif, alors vous allez
+            devoir répondre à un certain nombre de questions. Je vais vous
+            demander de vous rendre sur menti.com et d'entrer le code qui
+            s'affiche à l'écran.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Principes e-commerce</h2>
+          <ol>
+            <li>Définition, vocabulaire et origines</li>
+            <li>Expansion</li>
+            <li>Les familles</li>
+            <li>Les enjeux</li>
+            <li>Les modèles</li>
+            <li>Le marketing</li>
+            <li>Le design</li>
+            <li>Vos métiers</li>
+            <li>Les solutions</li>
+            <li>Architecture</li>
+            <li>Le Paiement</li>
+          </ol>
+          <aside class="notes">
+            À la fin de programme, l'objectif est que vous arriviez à comprendre
+            ce qu'est le commerce en ligne, quel rôle vous pouvez jouer si vous
+            souhaitez vous spécialiser dedans et quelles collaborations vous
+            pouvez avoir. Ma première satisfaction sera de vous apporter du
+            recul et vous permettre de faire preuve de discernement face à un
+            projet auquel vous pourrez être amenés à participer.
+          </aside>
+        </section>
+
+        <section>
+          <section>
+            <h2>Définition, vocabulaire et origines</h2>
+          </section>
+          <section>
+            <h2>Définition</h2>
+            <p class="fragment">
+              <a href="https://fr.wikipedia.org/wiki/Commerce_en_ligne"
+                >Wikipedia</a
+              >
+              <q>
+                Le commerce en ligne, ou commerce électronique, est l'échange
+                pécuniaire de biens, de services ou d'informations par
+                l'intermédiaire des réseaux informatiques, notamment Internet.
+              </q>
+            </p>
+          </section>
+          <section>
+            <h2>Vocabulaire</h2>
+            <img
+              height="90"
+              data-src="./images/ecommerce-definition.drawio.png"
+              alt="e-commerce en image"
+            />
+          </section>
+          <section>
+            <h2>Produit</h2>
+            <img
+              height="180"
+              data-src="./images/ecommerce-definition-focus-produit.drawio.png"
+              alt="e-commerce en image focus produit"
+            />
+          </section>
+          <section>
+            <h2>Produit détails</h2>
+            <img
+              height="320"
+              data-src="./images/ecommerce-definition-focus-produit-detail.drawio.png"
+              alt="e-commerce en image focus produit détail"
+            />
+          </section>
+          <section>
+            <h2>Réseau informatique</h2>
+            <img
+              height="280"
+              data-src="./images/ecommerce-definition-focus-reseau-informatique.drawio.png"
+              alt="e-commerce en image focus réseau"
+            />
+          </section>
+          <section>
+            <h2>Transaction</h2>
+            <img
+              height="240"
+              data-src="./images/ecommerce-definition-focus-transaction.drawio.png"
+              alt="e-commerce en image focus transaction"
+            />
+          </section>
+          <section>
+            <h2>Origines</h2>
+            <img
+              height="400"
+              data-src="./images/ecommerce-origines.drawio.png"
+              alt="e-commerce origines"
+            />
+          </section>
+          <section>
+            <h2>Minitel 3615 LaRedoute</h2>
+            <img height="60" data-src="./images/cocorico.png" alt="cocorico" />
+            <ul>
+              <li>La France pionnière dans les années 80</li>
+              <li>1984 : livraison 48h chrono</li>
+              <li>LaRedoute Catalogue comptera jusque 6 000 salariés</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Expansion 📈</h2>
+            <p>Un secteur en plein boom.</p>
+          </section>
+          <section>
+            <h2>Quelles révolutions ?</h2>
+            <div>
+              <ol>
+                <li>24/7 et Asynchrone</li>
+                <li>Mondial</li>
+                <li>Tester et apprendre en continu</li>
+              </ol>
+              <img
+                class="fragment"
+                height="300"
+                data-src="./images/test-and-learn.png"
+                alt="lean model test and learn"
+              />
+            </div>
+            <aside class="notes">
+              Même si la VPC par exemple n'a pas grand chose à envier sur
+              certains points, voici quelques caractéristiques intrinsèques du
+              commerce en ligne.
+            </aside>
+          </section>
+          <section>
+            <h2>Pourquoi ça a pris ?</h2>
+            <ol class="r-fit-text">
+              <li><strong>Un terreau</strong> : le réseau mondial internet.</li>
+              <li>
+                <strong>Un plant</strong> :
+                <ul>
+                  <li>
+                    Maturité tech des solutions logicielles et matérielles.
+                  </li>
+                  <li>Expérience client et ergonomie.</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Un fertilisant</strong> : taux d'équipement et fonds
+                investis.
+              </li>
+            </ol>
+            <aside class="notes">
+              Par rapport au réseau postal, on voit qu'on a réduit encore la
+              latence d'un ordre de magnitude très appréciable.
+            </aside>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <h2>Perspectives</h2>
+            <div class="r-hstack justify-center">
+              <div
+                data-id="box1"
+                data-auto-animate-delay="0"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  width: 300vw;
+                  height: 25vh;
+                  margin: 10px;
+                "
+              >
+                <p clas="r-fit-text">CA 2021<br />5 000Mds$</p>
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  width: 300vw;
+                  height: 25vh;
+                  margin: 10px;
+                "
+              >
+                2024<br />
+                25% des ventes
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  width: 300vw;
+                  height: 25vh;
+                  margin: 10px;
+                "
+              >
+                70% des 🇫🇷<br />&gt; 1 achat les 12 derniers mois
+              </div>
+            </div>
+            <aside class="notes">
+              Amazon c'est 12% avec 600B US$. À titre de comparaison,
+              l'industrie automobile c'est un marché de 5 000B US$, pas plus de
+              300B US$. On est aujourd'hui autour de 14% des ventes mondiales
+              réalisées par le biais du e-commerce ce qui signifie que cela va
+              pratiquement doubler en 3 ou 4 ans. Le UK c'est 84% de la
+              population vs FR.
+            </aside>
+          </section>
+          <section
+            data-auto-animate
+            data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)"
+          >
+            <h2>Perspectives</h2>
+            <div class="r-stack">
+              <div
+                data-id="box1"
+                style="
+                  background: #211747;
+                  width: 300px;
+                  height: 300px;
+                  border-radius: 200px;
+                "
+              ></div>
+              <div
+                data-id="box2"
+                style="
+                  background: #e03c31;
+                  width: 200px;
+                  height: 200px;
+                  border-radius: 200px;
+                "
+              ></div>
+              <div
+                data-id="box3"
+                style="
+                  background: #a47f74;
+                  width: 100px;
+                  height: 100px;
+                  border-radius: 200px;
+                "
+              ></div>
+            </div>
+            <p>
+              Le e-commerce va à minima doubler dans les 5 ans à venir, vous en
+              serez probablement les artisans.
+            </p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Les Familles 👪</h2>
+            <p>
+              Elles reposent sur la nature de <br />la relation
+              <strong>vendeur-acheteur</strong>.
+            </p>
+          </section>
+          <section>
+            <h2>5 grandes familles</h2>
+            <ol class="r-fit-text">
+              <li class="fragment">
+                <strong>B2G</strong> : entre entreprises et gouvernements ou
+                <strong>B</strong>usiness to <strong>G</strong>overnement.
+              </li>
+              <li class="fragment">
+                <strong>B2B</strong> : entre entreprises ou
+                <strong>B</strong>usiness to <strong>B</strong>usiness.
+              </li>
+              <li class="fragment">
+                <strong>B2C</strong> : à destination des particuliers ou
+                <strong>B</strong>usiness to <strong>C</strong>onsumer.
+              </li>
+              <li class="fragment">
+                <strong>C2C</strong> : entre particuliers ou
+                <strong>C</strong>onsumer to <strong>C</strong>onsumer.
+              </li>
+              <li class="fragment">
+                <strong>C2B</strong> : particulier à entreprises
+                <strong>C</strong>onsumer to <strong>B</strong>usiness.
+              </li>
+            </ol>
+            <aside class="notes">
+              Échange libre sur les différents modèles pour citer des cas
+              concrets.
+            </aside>
+          </section>
+          <section>
+            <h2>B2B</h2>
+            <p>
+              Vous les connaissez moins car la plupart du temps ce sont des
+              services entre professionnels, par exemple commander des machines
+              pour une usine. Vous connaissez cependant Amazon ou Alibaba qui
+              sont les plus grandes galeries marchandes et donc un modèle B2B2C
+              en réalité.
+            </p>
+          </section>
+          <section>
+            <h2>B2C - TOP 10 France 2021</h2>
+            <ol>
+              <li>Amazon</li>
+              <li>Leboncoin</li>
+              <li>Cdiscount</li>
+              <li>Ebay</li>
+              <li>AliExpress</li>
+              <li>Leroy Merlin</li>
+              <li>Vinted</li>
+              <li>Microsoft</li>
+              <li>Fnac</li>
+              <li>Booking.com</li>
+            </ol>
+          </section>
+          <section>
+            <h2>C2C - Exemples</h2>
+            <ul>
+              <li>Airbnb</li>
+              <li>PAP</li>
+              <li>Blablacar</li>
+              <li>Leboncoin</li>
+              <li>Vinted</li>
+            </ul>
+          </section>
+          <section>
+            <h2>C2B - Exemples</h2>
+            <ul>
+              <li>Influenceurs</li>
+              <li>Adobe Stock (ex Fotolia)</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Enjeux ⚔</h2>
+            <aside class="notes">
+              Même si précédemment on a vu que le commerce en ligne a été une
+              formidable source d'opportunités pour beaucoup, nous allons
+              désormais lister un certain nombre d'enjeux d'aujourd'hui et de
+              demain.
+            </aside>
+          </section>
+          <section>
+            <h2>Enjeux technologiques</h2>
+            <ol class="r-fit-text">
+              <li class="fragment">
+                <strong>Haute disponibilité</strong> : toujours opérationnel,
+                24/7.
+              </li>
+              <li class="fragment">
+                <strong>Mise à l'échelle</strong> : tenir un trafic/pics
+                importants (ex: black friday)
+              </li>
+              <li class="fragment">
+                <strong>Sécurité</strong> : montée des rançongiciels et autres
+                vols de données.
+              </li>
+              <li class="fragment">
+                <strong>Données</strong> : collecter et analyse.
+              </li>
+            </ol>
+            <aside class="notes">
+              Qui a un exemple de site qui ferme parfois ses portes ? Parmi les
+              enjeux on pourra aussi parler de la maintenabilité et de
+              l'expertise. Le 11 novembre en Chine tous les ans il y a la
+              "journeée des célibataires". C'est un peu leur black friday. En
+              2017 par exemple il y a eu plus de 1Mds$ de CA/heure, soit en une
+              journée tout le CA d'Auchan France, ses 126 hypermarchés et 250
+              supermarchés. Cela représente 325k commandes/sec en pic. Les
+              commandes étaient à 90% issues du mobile.
+            </aside>
+          </section>
+          <section>
+            <h2>Conformité</h2>
+            <ul class="r-fit-text">
+              <li class="fragment">
+                <strong>RGPD/GDPR</strong> : respect des règles sur les données
+                et la vie privée.
+              </li>
+              <li class="fragment">
+                <strong>Commerce international</strong> : des droits parfois
+                complexes s'appliquent.
+              </li>
+              <li class="fragment">
+                <strong>Accessibilité</strong> : ARIA (Accessible Rich Internet
+                Applications).
+              </li>
+              <li class="fragment">
+                <strong>Impact environnemental</strong> : émissions Co2 un jour
+                <a href="https://youtu.be/bBaXxMFMGbA">mesurées</a> et
+                contraintes.
+              </li>
+            </ul>
+            <aside class="notes">
+              Qui sait me dire ce que signifie RGPD ? Commerce international :
+              ça va au delà de juste les frais de douane, selon la nature des
+              produits aussi (ex: spiritueux). Et pour vous, quels sont les
+              enjeux du eCommerce ? Comment rendre le commerce meilleur demain
+              (ex QCommerce md 15min). Enfin, je vous invite à regarder plus ce
+              slide tard la conférence de François Zaninotto sur la sobriété
+              numérique dont j'ai mis le lien dans ce slide.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Les modèles 🎯</h2>
+            <p>Subtilités et stratégies au delà des familles</p>
+          </section>
+          <section>
+            <h2>PURE PLAYER</h2>
+            <p>
+              dans le commerce en ligne, désigne ceux dont le business est 100%
+              en ligne.
+            </p>
+            <p>À l'opposé des traditionnels brick and mortar.</p>
+            <p>Ex: eBay, Amazon, Aquarelle.com.</p>
+          </section>
+          <section>
+            <h2>VERTICAL PLAYER</h2>
+            <p>
+              On parle de <strong>D</strong>igital <strong>N</strong>ative
+              <strong>V</strong>ertical <strong>P</strong>layer (DNVB).
+            </p>
+            <p>
+              Ils maîtrisent souvent leur chaîne de valeur de A à Z et vendent
+              exclusivement en ligne.
+            </p>
+            <p>Ce sont des pure players spécialisés.</p>
+            <p>Ex: Le Slip Français.</p>
+          </section>
+          <section>
+            <h2>PLACE DE MARCHÉ</h2>
+            <p>Spécialiste de l'intermédiation vendeur-acheteur.</p>
+            <p>
+              La place de marché sécurise souvent le paiement et la suite est
+              sous la responsabilité du vendeur vis à vis de l'acheteur.
+            </p>
+            <p>Ex: Booking.com, Amazon, Uber</p>
+          </section>
+          <section>
+            <h2>DRIVE TO STORE</h2>
+            <img
+              data-src="images/modele-drive-tos-store.png"
+              alt="Drop shipping"
+              height="400"
+            />
+            <aside class="notes">
+              vise à replacer le magasin physique au centre de l’expérience
+              client et de la communication des marques. L’idée est de générer
+              du trafic en point de vente en utilisant les nouvelles
+              technologies.
+            </aside>
+          </section>
+          <section>
+            <h2>DROP SHIPPING</h2>
+            <img
+              data-src="images/modele-dropshipping.png"
+              alt="Drop shipping"
+            />
+            <aside class="notes"></aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Le marketing 🧜‍♂️</h2>
+            <p>Vocabulaire, indicateurs et techniques à connaître.</p>
+          </section>
+          <section>
+            <h2>Cross-sell</h2>
+            <p>
+              Proposer un produit qui complète l'achat initial avant qu'il soit
+              validé.
+            </p>
+            <p>Ex: coque pour le téléphone, chaussettes avec chaussures.</p>
+          </section>
+          <section>
+            <h2>Up-sell</h2>
+            <p>Proposer des produits similaires au produit recherché.</p>
+            <p>
+              Ils peuvent proposer plus de fonctionnalités, des options
+              supplémentaires ou être de la même marque.
+            </p>
+          </section>
+          <section>
+            <h2>KPI</h2>
+            <p>
+              <strong>K</strong>ey <strong>P</strong>erformance
+              <strong>I</strong>ndicators
+            </p>
+            <aside class="notes">
+              Ou indicateurs clé de performance. Ce sont les facteurs mesurables
+              et quantifiables permettant d'évaluer les performances du site et
+              de la stratégie mise en place. Ils forment un tableau de bord et
+              aident à comprendre ce qui fonctionne ou non.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : coût d'acquisition client</h2>
+            <p class="r-fit-text">
+              Permet de déterminer le véritable retour sur investissement (ROI).
+            </p>
+            \[\begin{aligned} \frac{Coût total campagne marketing}
+            {Nb conversions} = CAC \end{aligned}\]
+            <p class="r-fit-text">
+              👉 Pour obtenir des données exploitables, évaluez séparément vos
+              différents canaux d’acquisition (organique, payant, social,
+              référent, ...)
+            </p>
+            <aside class="notes">
+              CAC en anglais pour Customer Acquisition Cost.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : taux de conversion</h2>
+            <p class="r-fit-text">
+              Le plus important de tous. Sert à mesurer l'éfficacité d'une
+              landing page ou d'un tunnel d'achat par exemple.
+            </p>
+            \[\begin{aligned} \frac{Nb conversions} {Nb visites} = CR
+            \end{aligned}\]
+            <p class="r-fit-text">
+              👉 Pour une analyse précise, divisez les conversions par sources
+              de trafic, campagnes marketing, localisations et mots-clés de
+              recherche
+            </p>
+            <aside class="notes">
+              CR en anglais (ou CVR) pour Conversion Rate.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : taux de conversion</h2>
+            <p>Comment optimiser votre taux de conversion ?</p>
+            <ul class="r-fit-text">
+              <li>
+                Assurez-vous de la convivialité et de la clarté du site :
+                tarification, description produit et preuves sociales (avis
+                clients).
+              </li>
+              <li>
+                Testez votre entonnoir de vente pour vérifier si une/des étapes
+                coincent.
+              </li>
+              <li>
+                Analysez les comportements : pages vues / de sortie pour
+                identifier d’où vient le problème.
+              </li>
+              <li>
+                Identifier les moyens pour faciliter la conversion (option
+                livraison + rapide, + de moyens de paiement, etc.)
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>KPI : taux d'abandon de panier</h2>
+            <p>Le plus important de tous.</p>
+
+            \[\begin{aligned} \frac{Nb créations panier - Nb commandes}
+            {Nb visites} \times 100\end{aligned}\]
+            <p class="r-fit-text">
+              👉 Sert à mesurer l'éfficacité d'une landing page ou d'un tunnel
+              d'achat.
+            </p>
+            <aside class="notes">CR en anglais pour Conversion Rate.</aside>
+          </section>
+          <section>
+            <h2>KPI : taux d'abandon de panier</h2>
+            <p>Comment optimiser votre taux d’abandon de panier ?</p>
+            <ul class="r-fit-text">
+              <li>
+                Soyez transparent sur les frais (livraison, annulation, ...).
+              </li>
+              <li>
+                N’obligez pas l’utilisateur à créer un compte pour passer
+                commande.
+              </li>
+              <li>
+                Rendez votre tunnel d’achat le plus simple et clair possible.
+              </li>
+              <li>
+                Rendez votre formulaire de commande le plus court/efficace
+                possible.
+              </li>
+              <li>Rassurez : ajoutez des certifications de sécurité.</li>
+              <li>Offrez un maximum d’options de paiement.</li>
+              <li>
+                Lancez une campagne ciblant les utilisateurs ayant abandonnés
+                leurs paniers.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>KPI : valeur moyenne par commande</h2>
+            <p>Aussi appelé panier moyen.</p>
+
+            \[\begin{aligned} \frac{Total CA commandes} {Nb commandes} =
+            AOV\end{aligned}\]
+            <p class="r-fit-text">
+              👉 aide à prendre des décisions en matière de prix et déterminer
+              les canaux d'acquisition.
+            </p>
+            <aside class="notes">AOV en anglais Average Order Value.</aside>
+          </section>
+          <section>
+            <h2>KPI : trafic du site</h2>
+            <ul>
+              <li>Nombre de pages vues par visite</li>
+              <li>Sources de trafic</li>
+              <li>Visiteurs uniques</li>
+              <li>Visiteurs de retour</li>
+            </ul>
+          </section>
+          <section>
+            <h2>KPI : taux de rebond</h2>
+
+            <p class="r-fit-text">
+              \[\begin{aligned} \frac{Nb visiteurs arrivés sur une page 
+              n'ayant vu que cette page}
+              {Nb total visiteurs arrivés sur le site via la page analysée} =
+              BR\end{aligned}\]
+            </p>
+            <p class="r-fit-text">
+              👉 au delà de 80% c'est souvent que vos visiteurs ne sont pas
+              arrivés par la bonne page.
+            </p>
+            <aside class="notes">
+              BR en anglais Bounce Rate. Correspond au pourcentage de visiteurs
+              ayant consulté une seule et unique page de votre site web sans
+              interaction.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : taux de rétention</h2>
+            <p>
+              Correspond au pourcentage de clients acquis au cours d’une
+              certaine période qui est revenu pour acheter.
+            </p>
+            <p class="r-fit-text">
+              \[\begin{aligned} \frac{Nb clients revenus}
+              {Nb total clients sur la période} \times 100 = CRR\end{aligned}\]
+            </p>
+            <p class="r-fit-text">
+              👉 Votre taux de rétention dépendra principalement de votre
+              capacité à établir une relation durable avec vos clients.
+            </p>
+            <aside class="notes">
+              CRR en anglais Customer Retention Rate. La rétention a un impact
+              important sur la valeur de la durée de vie moyenne du client, et
+              donc sur sa rentabilité.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : taux de rétention</h2>
+            <p>Comment optimiser votre taux de rétention ?</p>
+            <ul class="r-fit-text">
+              <li>Vendez un produit ou service de qualité 😉</li>
+              <li>Respectez les engagements (délais de livraison, ...).</li>
+              <li>Optimisez vos conditions d’expédition.</li>
+              <li>Offrez une expérience d’achat sans encombre.</li>
+              <li>
+                Encouragez le retour en offrant des incitatifs à vos clients
+                (programme de fidélisation, code promotionnel après un premier
+                achat, envoi d’offres personnalisées par e-mail, etc.).
+              </li>
+              <li>
+                Entretenez et fidélisez la relation en sollicitant régulièrement
+                vos clients avec des messages ciblés.
+              </li>
+              <li>Mettez en place des campagnes de remarketing.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>KPI : taux de retour / remboursement</h2>
+
+            <p class="r-fit-text">
+              \[\begin{aligned} \frac{Nb articles retournés}
+              {Nb total articles vendus} \times 100 = RR\end{aligned}\]
+            </p>
+            <p class="r-fit-text">
+              👉 la segmentation du taux par produit et catégories aidera à
+              supprimer les produits peu performants du catalogue.
+            </p>
+            <aside class="notes">
+              RR en anglais Return Rate. Un taux élevé indique des problèmes de
+              qualité du produit ou de satisfaction du client. Comment optimiser
+              votre taux de retour ? Assurez-vous que vos clients voient et
+              comprennent ce qu’ils achètent. De très bonnes fiches produits
+              vous aideront.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : valeur de vie du client</h2>
+            <p>
+              Montant total d’argent qu’un client dépense sur un e-commerce
+              pendant sa relation avec celui-ci.
+            </p>
+
+            <p class="r-fit-text">
+              \[\begin{aligned} {Val moyenne commande} \times
+              {Nb ventes répétées} \times {Durée vie moyenne client} =
+              LTV\end{aligned}\]
+            </p>
+            <p class="r-fit-text">
+              👉 Si vous dépensez 100€ pour acquérir un client, vous devrez
+              faire en sorte que ce montant soit rentabilisé par ce que
+              dépensera le client au cours de la prochaine année.
+            </p>
+            <aside class="notes">
+              LTV en anglais Life Time Value. C’est un KPI important pour
+              évaluer si vos clients vous rapportent plus que ce que vous avez
+              dépensé pour les acquérir.
+            </aside>
+          </section>
+          <section>
+            <h2>KPI : valeur de vie du client</h2>
+            <p>Comment optimiser la valeur vie du client ?</p>
+            <ul class="r-fit-text">
+              <li>Personnalisez la relation client.</li>
+              <li>
+                Mettez l’accent sur votre service à la clientèle (mises à jour
+                gratuites et une assistance à vie, être disponible au bon
+                moment, support multicanal, analyser et améliorer vos e-mails,
+                faciliter le service client).
+              </li>
+              <li>
+                Fidélisez : accès anticipé aux ventes, premier regard exclusif
+                sur les nouveaux produits, information sur les ventes à venir,
+                goodies offerts pour chaque commande passée, mise en place d’un
+                système de points bonus, etc.).
+              </li>
+              <li>Incorporez des up-sells dans vos offres.</li>
+              <li>Créez du contenu intéressant et motivant.</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Le design 💅</h2>
+          </section>
+          <section>
+            <h2>Collaboration avec</h2>
+            <ul>
+              <li>Designers</li>
+              <li>Intégrateurs</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Outils populaires</h2>
+            <ul>
+              <li>Figma</li>
+              <li>Adobe XD</li>
+              <li>Sketch</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Bonnes pratiques</h2>
+            <ul>
+              <li>Design system</li>
+              <li>
+                <a href="https://bradfrost.com/blog/post/atomic-web-design"
+                  >Atomic design</a
+                >
+              </li>
+              <li><a href="https://storybook.js.org">Storybook</a></li>
+            </ul>
+          </section>
+          <section>
+            <h2>Collaboration avec marketing + tech</h2>
+            <img
+              data-src="images/design-wireframe.png"
+              alt="design wireframe"
+            />
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Vos métiers ⚙</h2>
+          </section>
+          <section>
+            <h2>Développeur frontend 👨‍🎨</h2>
+            <ul class="r-fit-text">
+              <li>
+                <strong>Garantir</strong> une bonne ergnonomie et une navigation
+                optimale de l'app web.
+              </li>
+              <li>
+                <strong>Réaliser</strong> le développement et l'intégration des
+                maquettes.
+              </li>
+              <li>
+                <strong>Contribuer</strong> aux corrections et aux dernières
+                évolutions technologiques.
+              </li>
+              <li>
+                <strong>S'assurer</strong> du respect des normes et standards
+                appliqués.
+              </li>
+            </ul>
+            <p>#HTML5 #CSS3 #Libairies #Animation</p>
+          </section>
+          <section>
+            <h2>Développeur backend 👨‍💻</h2>
+            <ul class="r-fit-text">
+              <li>
+                <strong>Assurer</strong> la mise en place de solutions
+                techniques adaptées.
+              </li>
+              <li><strong>Contribuer</strong> aux évolutions techniques.</li>
+              <li><strong>Intégrer</strong> des solutions tierces.</li>
+              <li>
+                <strong>Apporter</strong> le support nécessaire aux
+                utilisateurs.
+              </li>
+            </ul>
+            <p>#Framework #API #CMS #CRM #EDI #ERP</p>
+          </section>
+          <section>
+            <h2>Architecte logiciel 🧙‍♂️</h2>
+            <ul class="r-fit-text">
+              <li>
+                <strong>Mener</strong> la création et l'évolution du shéma
+                technique.
+              </li>
+              <li>
+                <strong>Assurer</strong> la transcription des besoins en
+                architectures techniques.
+              </li>
+              <li>
+                <strong>Mettre</strong> en place les frameworks à destination
+                des développeurs.
+              </li>
+              <li><strong>Garantir</strong> la veille technologique.</li>
+            </ul>
+            <p>#Framework #CI #CD #IAC</p>
+          </section>
+          <section>
+            <h2>Data analyst 👨‍🏫</h2>
+            <ul class="r-fit-text">
+              <li><strong>Maîtriser</strong> les outils statistiques.</li>
+              <li>
+                <strong>Identifier</strong> les sources de données pertinentes.
+              </li>
+              <li><strong>Mettre en œuvre</strong> le pipeline de données.</li>
+            </ul>
+            <p>#DatawareHouse #DataLake #Analytics</p>
+          </section>
+          <section>
+            <h2>Data scientist 👨‍🔬</h2>
+            <ul class="r-fit-text">
+              <li><strong>Construire</strong> des algorithmes.</li>
+              <li><strong>Élaborer</strong> des modèles prédictifs.</li>
+              <li>
+                <strong>Fournir</strong> des outils d'aide à la décision aux
+                équipes métier.
+              </li>
+            </ul>
+            <p>#IA #BI #Model</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Les solutions 👌</h2>
+            <p>📍 Comment se repérer parmi des solutions :</p>
+            <ul>
+              <li>À périmètre variable</li>
+              <li>Dans un marché très changeant.</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Périmètre variable</h2>
+            <p>Plus ou moins de briques métier intégrées, parmi :</p>
+            <div
+              style="display: flex; flex-wrap: wrap; justify-content: center"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                panier
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                catalogue
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                commande
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                paiement
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                inventaire
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                expédition
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CRM
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CMS
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fidélité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                recommandation
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                achat
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                facturation
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                stock
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                approvisionnement
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                comptabilité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                BI
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                acquisition
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fabrication
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                livraison
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Marché changeant 🧭</h2>
+          </section>
+          <section>
+            <h2>Parts de marché 2020 → 2021</h2>
+            <div style="display: flex; gap: 24px; justify-content: center">
+              <img
+                height="250"
+                data-src="images/solutions-marketshare-2020.png"
+                alt="Part de marché 2020 des solutions"
+              />
+              <img
+                height="250"
+                data-src="images/solutions-marketshare-2021.png"
+                alt="Part de marché 2021 des solutions"
+              />
+            </div>
+            <small>
+              <a
+                target="blank"
+                rel="noopener"
+                href="https://www.wappalyzer.com/technologies/ecommerce"
+                >source : wappalyzer</a
+              >
+            </small>
+            <aside class="notes">
+              Ici par exemple on voit shopify double en seulement 1 an,
+              Prestashop et Magento baisser drastiquement. Aussi, ce sont des
+              moyennes donc ici par exemple vous ne verrez pas certains noms de
+              solutions qui sont utilisés par une poignée de très grosses
+              entreprises dans le monde. Apprenez à interpréter, ce graphique
+              montre en résumé les solutions les plus plébiscités par les PME.
+              Bon ok mais c'est pas super simple vu comment ça change, il n'y a
+              pas des gens qui peuvent nous dire quoi choisir ?
+            </aside>
+          </section>
+          <section>
+            <h2>Comment se repérer ?</h2>
+            <p>
+              Gartner
+              <a
+                target="blank"
+                rel="noopener"
+                href="https://www.gartner.com/en/documents/4005295"
+                >magic quadrant</a
+              >
+              et
+              <a
+                target="blank"
+                rel="noopener"
+                href="https://www.gartner.com/reviews/market/digital-commerce"
+                >listing</a
+              >
+            </p>
+            <img
+              data-src="images/gartner-magic-quadrant-2021.webp"
+              alt="Comment se reperer"
+              height="560"
+            />
+            <aside class="notes">
+              Gartner, c'est une entreprise américaine de conseil et de
+              recherche dans le domaine des techniques avancées. Elle effectue
+              une veille et publie régulièrement des rapports. On pourrait aussi
+              citer IDC, Forester Research, Capterra ou encore ThoughWorks. Ils
+              ne détiennent pas la véritié, en tout cas pas votre vérité, celle
+              de votre projet.
+            </aside>
+          </section>
+          <section>
+            <h2>Disclaimer 📢</h2>
+            <p>
+              Avant de retenir une solution, assurez-vous d'avoir bien identifié
+              les problématiques et besoins produit !
+            </p>
+            <p>
+              Explorez le domaine du problème avant de vous diriger tout droit
+              dans le domaine des solutions.
+            </p>
+            <aside class="notes">
+              Tous les camemberts ou magic quadrant ne vous donneront pas la
+              solution toute cuite, ils vous aideront uniquement à vous repérer
+              dans la galaxie de solutions.
+            </aside>
+          </section>
+          <section data-background="images/illustration-prisme.jpg">
+            <h2
+              style="
+                color: rgb(229, 230, 233);
+                background-color: rgba(40, 40, 40, 0.6);
+                padding: 30px;
+                border-radius: 5px;
+              "
+            >
+              Passez au prisme
+            </h2>
+          </section>
+          <section>
+            <h2>Par ancienneté</h2>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>Has been 🙅‍♂️</th>
+                  <th>Actuel 💪</th>
+                  <th>Hype 🚀</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Drupal, Joomla, Wpcommerce, Prestashop, ...</td>
+                  <td>Woocommerce, Shopify, Magento, ...</td>
+                  <td>BigCommerce, Swell.io, Webflow, ...</td>
+                </tr>
+              </tbody>
+            </table>
+            <aside class="notes">
+              Vous pourriez rejoindre un projet déjà lancé qui utilise une
+              solution désormais considérée comme dépassée. Autant elle convient
+              très bien, autant votre mission (périeuse) serait de faire évoluer
+              vers une nouvelle solution. Vu que vous êtes junior, si on vous
+              confie cette mission précise, fuyez, vous n'avez pas l'expérience
+              ! Si jamais vous démarrez un projet tout neuf, préférez les
+              solutions actuelles ou nouvelles, mais attention les nouvelles
+              solutions si elles vous apportent de grands pouvoir pourraient
+              venir avec de grandes responsabilités.
+            </aside>
+          </section>
+          <section>
+            <h2>Par taille de projet / d'entreprise</h2>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>Small 🙅‍♂️</th>
+                  <th>Mid 💪</th>
+                  <th>Big 🚀</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Shopify, Wix, Squarespace, Woocommerce, Webflow, ...</td>
+                  <td>
+                    Woocommerce, Shopify, Magento, BigCommerce, Elasticpath,
+                    Swell.io, ...
+                  </td>
+                  <td>
+                    SAP, Oracle, Salesforce, Vtex, Optimizely, BigCommerce,
+                    Elasticpath, Swell.io, ...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <aside class="notes">
+              Ce qui est intéressant ici c'est qu'on voit certains noms de
+              solutions apparaître dans plusieurs colonnes à la fois, ça permet
+              de bien comprendre comment une solution pourra accompagner la
+              croissance de l'activité de vente en ligne de l'entreprise. Ça ne
+              sert à rien de sélectionner une solution pour les entreprises qui
+              réalisent plusieurs millions de chiffre d'affaire quand on fait
+              zéro et qu'on ne fera pas ces chiffres avant 5 ans par exemple.
+            </aside>
+          </section>
+          <section>
+            <h2>Par modèle/coût</h2>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>Open source 📖</th>
+                  <th>Propriétaire 🔐</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Sylius, Magento, Woocommerce, Drupal, Joomla, ...</td>
+                  <td>
+                    SAP, Oracle, Salesforce, Shopify, BigCommerce, Elasticpath,
+                    Swell.io, Wix, Webflow, ...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>SaaS 💲</th>
+                  <th>Achant/Licence 💲💲</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Shopify, BigCommerce, Swell.io, Webflow, Wix, Squarespace,
+                    ...
+                  </td>
+                  <td>
+                    SAP, Oracle, Salesforce, Vtex, , Elasticpath, Optimizely,
+                    ...
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <aside class="notes">
+              En termes de coûts, le plus important à estimer c'est le TCO
+              (Total Cost of Ownership). Ça implique de bien décortiquer le
+              CAPEX (les licences peuvent êtres considérées comme un achat
+              d'actif) et les OPEX (frais opérationnels, typiquement les
+              abonnements SaaS ou Software as a Service). Les coûts souvent sous
+              estimés sont les votres, combien il faut payer de développeurs et
+              combien de temps pour arriver à une solution construite une
+              solution de zéro ou presque.
+            </aside>
+          </section>
+          <section>
+            <h2>Par architecture</h2>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>Difficile à étendre 🦸‍♂️</th>
+                  <th>Facile à étendre 👶</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Shopify, Magento, Oracle, SAP, Salesforce, Woocommerce,
+                    Vtex, Wix, Webflow, Squarespace, ...
+                  </td>
+                  <td>BigCommerce, Elasticpath, Swell.io, ...</td>
+                </tr>
+              </tbody>
+            </table>
+            <table class="r-fit-text">
+              <thead>
+                <tr>
+                  <th>Rapide à étendre ⚡</th>
+                  <th>Long à étendre ⏳</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    Shopify, BigCommerce, Elasticpath, Swell.io, Woocommerce,
+                  </td>
+                  <td>SAP, Salesforce, Vtex, Wix, Webflow, Squarespace, ...</td>
+                </tr>
+              </tbody>
+            </table>
+            <aside class="notes">
+              Autant il le projet sur lequel vous bossez est simple et basique,
+              d'ailleurs c'est un projet, c'est à dire qu'il se termine plus ou
+              moins au moment où il est livré et il y aura peu d'évolutions ou
+              alors selon des cycles très espacés dans le temps. Dans ce cas
+              prenez la colonne de gauche. La facilité d'extension réside dans
+              plusieurs critères tels que : une API ouverte, une bonne
+              documentation, la composabilité de la solution.
+            </aside>
+          </section>
+          <section>
+            <h2>Fait maison 🏡</h2>
+            <ol>
+              <li>From scratch</li>
+              <li>Depuis un framework (Spring Boot, Symfony, rails, ...)</li>
+              <li>Basé sur un framework (Sylius, Shopizer, Solidus, ...)</li>
+            </ol>
+            <aside class="notes">
+              L'option from scratch est souvent une mauvaise idée à moins que le
+              projet soit très très simple. Et surtout il faut penser à migrer
+              vers une solution plus adaptée à un moment plutôt que persister à
+              développer continuellement sur cette solu from scratch, à moins
+              d'avoir des besoins très spécifiques y compris sur les
+              fondamentaux de la solution. Depuis un framework ça reste périeux
+              mais ça a plus de sens car cela donne déjà un cadre par nature.
+              Enfin prendre une solution basée sur un framework qu'on maîtrise
+              pourquoi pas et c'est sûrement la meilleure option des trois si ça
+              répond déjà assez bien au besoin.
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Architecture.s 🏪</h2>
+            <p>Schémas et échanges au tableau</p>
+            <p>Composer avec les briques</p>
+          </section>
+          <section>
+            <h2>Architecture dropshipping</h2>
+            <p>Vente de lampes torches</p>
+            <div
+              style="display: flex; flex-wrap: wrap; justify-content: center"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                panier
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                catalogue
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                commande
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                paiement
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                inventaire
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                expédition
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CRM
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CMS
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fidélité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                recommandation
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                achat
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                facturation
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                stock
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                approvisionnement
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                comptabilité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                BI
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                acquisition
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fabrication
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                livraison
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Architecture place de marché</h2>
+            <p>Réservation d'hôtels</p>
+            <div
+              style="display: flex; flex-wrap: wrap; justify-content: center"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                panier
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                catalogue
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                commande
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                paiement
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                inventaire
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                expédition
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CRM
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CMS
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fidélité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                recommandation
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                achat
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                facturation
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                stock
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                approvisionnement
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                comptabilité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                BI
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                acquisition
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fabrication
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                livraison
+              </div>
+            </div>
+          </section>
+          <section>
+            <h2>Architecture DNVB</h2>
+            <p>Pulls en cachemir</p>
+            <div
+              style="display: flex; flex-wrap: wrap; justify-content: center"
+            >
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                panier
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                catalogue
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                commande
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                paiement
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                inventaire
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                expédition
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CRM
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                CMS
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fidélité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                recommandation
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                achat
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                facturation
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                stock
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                approvisionnement
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                comptabilité
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                BI
+              </div>
+              <div
+                data-id="box2"
+                data-auto-animate-delay="0.1"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #e03c31;
+                  border-radius: 5px;
+                  color: #f3e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                acquisition
+              </div>
+              <div
+                data-id="box3"
+                data-auto-animate-delay="0.2"
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #a47f74;
+                  border-radius: 5px;
+                  color: #e9e9e9;
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                fabrication
+              </div>
+              <div
+                style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background: #211747;
+                  border-radius: 5px;
+                  color: rgb(229, 230, 233);
+                  min-width: 10vw;
+                  padding: 2px 12px;
+                  height: 10vh;
+                  font-size: 80%;
+                  margin: 8px;
+                "
+              >
+                livraison
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h2>Le Paiement 💳</h2>
+          </section>
+          <section>
+            <h2>Les moyens de paiement</h2>
+            <ul class="r-fit-text">
+              <li>
+                <strong>Carte bancaire </strong>
+                <ul>
+                  <li>
+                    traditionnelle : CB, Visa, MasterCard, ... il faut assurer
+                    la sécurité de la transaction, à travers les protocoles
+                    dédiés comme 3D-Secure ou SSL.
+                  </li>
+                  <li>
+                    virtuelle : carte dématérialisée pour le règlement sécurisé
+                    d’un achat sur Internet.
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <strong>Portefeuille électronique</strong> : e-wallet. Paypal,
+                Paylib, Lydia, Apple Pay, Google Wallet, ...
+              </li>
+              <li>
+                <strong>Chèque bancaire</strong> : rassurant pour les
+                internautes encore méfiants de la fiabilité et de la sécurité
+                des paiements électroniques.
+              </li>
+              <li>
+                <strong>Chèque cadeau </strong> : un bon d’achat offert par une
+                enseigne à ses collaborateurs ou à ses partenaires.
+              </li>
+              <li>
+                <strong>Virement bancaire</strong> : très sollicité par les
+                professionnels BtoB.
+              </li>
+              <li>
+                <strong>Monnaie virtuelle</strong> : Bitcoin, Ethereum, ... pas
+                de cadre légal et décentralisé.
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Quel intermédiaire ?</h2>
+            <p>
+              <a
+                href="https://fr.wikipedia.org/wiki/Prestataire_de_services_de_paiement"
+                >PSP</a
+              >
+              : Payment Service Provider
+            </p>
+            <aside class="notes">
+              Le PSP permet aux marchands d'accepter les paiements en ligne. Ils
+              exposent une API que les marchands peuvent intégrer. Une
+              commission sur chaque transaction s'applique. Certains PSP peuvent
+              aider à lutter contre la fraude ou encore au rapprochement
+              bancaire (réconcilier les lignes de crédit du compte bancaire avec
+              les paiements en ligne).
+            </aside>
+          </section>
+          <section>
+            <h2>PSP les plus utilisés en Europe</h2>
+            <div style="display: flex; gap: 40px; justify-content: center">
+              <ul>
+                <li>Paypal</li>
+                <li>Stripe</li>
+                <li>Adyen</li>
+                <li>Hipay</li>
+                <li>Ingenico</li>
+                <li>Payzen</li>
+                <li>Worldline</li>
+              </ul>
+              <ul>
+                <li>Klarna</li>
+                <li>BlueSnap</li>
+                <li>Monext</li>
+                <li>Skrill</li>
+                <li>Amazon Pay</li>
+                <li>G2A Pay</li>
+                <li>Dalenys</li>
+                <li>...</li>
+              </ul>
+            </div>
+          </section>
+          <section>
+            <h2>Selon les pays</h2>
+            <p>
+              Allemagne, l'Autriche, la Suisse et la Belgique par exemple
+              Sofort/Klarna principal moyen de paiement. Principe de virement
+              direct.
+            </p>
+            <p>Italie : cartes prépayées.</p>
+            <p>France, comme beaucoup d'autres : carte de paiement.</p>
+          </section>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/search/search.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/math/math.js"></script>
+    <script>
+      // Also available as an ES module, see:
+      // https://revealjs.com/initialization/
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        center: true,
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [
+          RevealZoom,
+          RevealNotes,
+          RevealSearch,
+          RevealMarkdown,
+          RevealHighlight,
+          RevealMath.KaTeX,
+        ],
+        dependencies: [
+          {
+            src: "http://192.168.86.163:3001/socket.io/socket.io.js",
+            async: true,
+          },
+          { src: "plugin/remote-control/remote.js", async: true },
+        ],
+      });
+    </script>
+  </body>
+</html>
