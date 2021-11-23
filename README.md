@@ -6,7 +6,7 @@
 echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
 mkdir -p ~/bin
 cd ~/bin
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o ~/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o ~/bin/docker-compose
 chmod +x ~/bin/docker-compose
 source ~/.bashrc
 ```
