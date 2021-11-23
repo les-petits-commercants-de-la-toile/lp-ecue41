@@ -9,6 +9,9 @@ cd ~/bin
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o ~/bin/docker-compose
 chmod +x ~/bin/docker-compose
 source ~/.bashrc
+# vérifier qu'on a docker-compose installé et qui tourne bien
+docker-compose --version
+# Docker Compose version 1.29.2
 ```
 
 ## 2. Démarrer un wordpress via docker compose
