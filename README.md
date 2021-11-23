@@ -7,6 +7,8 @@ echo 'export PATH=~/bin:$PATH' >> ~/.bashrc
 mkdir -p ~/bin
 cd ~/bin
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o ~/bin/docker-compose
+# macOS avec processeurs ARM M1
+# curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-x86_64" -o ~/bin/docker-compose
 chmod +x ~/bin/docker-compose
 source ~/.bashrc
 # vérifier qu'on a docker-compose installé et qui tourne bien
@@ -20,8 +22,8 @@ docker-compose --version
 
 ```shell
 # variables d'environnement pour contourner des limitations docker
-grep -c 'export USER_ID' &>/dev/null && echo "export USER_ID=$(id -u)" >> ~/.bashrc
-grep -c 'export GROUP_ID' &>/dev/null && echo "export GROUP_ID=$(id -g)" >> ~/.bashrc
+grep -c 'export USER_ID' ~/.bashrc &>/dev/null || echo "export USER_ID=$(id -u)" >> ~/.bashrc
+grep -c 'export GROUP_ID' ~/.bashrc &>/dev/null || echo "export GROUP_ID=$(id -g)" >> ~/.bashrc
 source ~/.bashrc
 ```
 
