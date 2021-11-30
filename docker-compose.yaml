@@ -11,7 +11,7 @@ services:
         volumes:
             - ./mysql/database:/var/lib/mysql
         restart: always
-        #user: mysql # uncomment on subsequent starts
+        user: mysql # uncomment on subsequent starts
         environment:
             MYSQL_ROOT_PASSWORD: mypassword
             MYSQL_DATABASE: wordpress
