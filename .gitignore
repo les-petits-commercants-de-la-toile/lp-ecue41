@@ -13,3 +13,4 @@ dist/*.map
 plugin
 wordpress/data
 mysql/database
+nextjs-frontstore/node_modules
