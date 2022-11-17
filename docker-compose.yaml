@@ -25,4 +25,5 @@ services:
             WORDPRESS_DB_PASSWORD: wordpress
         volumes:
             - ./wordpress/aixmazone.ini:/usr/local/etc/php/conf.d/aixmazone.ini:ro
+            - ./wordpress/codebase-dynamic-hostname.php:/var/www/html/codebase-dynamic-hostname.php:ro
             - ./wordpress/src:/var/www/html
